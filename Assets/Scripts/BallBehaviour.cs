@@ -21,7 +21,7 @@ public class BallBehaviour : MonoBehaviour {
 		
 		// If ball is under the paddle
 		// Hardcoded y coordonates
-		if(transform.position.y < -6)		
+		if(transform.position.y < -6.5f)		
 			mainGameScript.GameOver();
 		
 	}
