@@ -9,3 +9,6 @@ My working environment:
 * Windows 8 x64
 * Unity Pro 3.5
 * Visual Studio 2012 Professional
+
+Known issues:
+* From version 3.5, Unity will not auto-distroy the particles. Since I have no fix for now, the particles created at the collision are not disposed proprietly.
