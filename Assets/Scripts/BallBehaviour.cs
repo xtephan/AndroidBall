@@ -2,7 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class BallBehaviour : MonoBehaviour {
-
+	
+	public MainGame mainGameScript;
+	
 	// Use this for initialization
 	void Start () {
 		// Apply initial force 
@@ -12,15 +14,13 @@ public class BallBehaviour : MonoBehaviour {
 		InvokeRepeating("IncreaseBallVelocity",2,2);
 	}
 	
-	
 	// Update is called once per frame
 	void Update () {
 		
 		// If ball is under the paddle
 		// Hardcoded y coordonates
-		if(transform.position.y < -6) {
-			Application.LoadLevel("menuScene");
-		}
+		if(transform.position.y < -6)		
+			mainGameScript.GameOver();
 		
 	}
 	
@@ -30,6 +30,6 @@ public class BallBehaviour : MonoBehaviour {
 		
 		rigidbody.velocity *= 1.05f;
 		
-		Debug.Log("velocity: " + rigidbody.velocity);
+		//Debug.Log("velocity: " + rigidbody.velocity);
 	}
 }

@@ -7,10 +7,14 @@ public class MenuScript : MonoBehaviour {
 	RaycastHit myhit = new RaycastHit();
     Ray myray = new Ray();
 	
+	public TextMesh highScore;
 	
 	// Use this for initialization
 	void Start () {
-	
+		
+		//Display the High Scoreso far
+		highScore.text = "HighScore: " + PlayerPrefs.GetInt("highScore").ToString();
+		
 	}
 	
 	// Update is called once per frame
