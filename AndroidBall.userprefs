@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\paddle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BallBehaviour.cs">
     <Files>
-      <File FileName="Assets\Scripts\BallBehaviour.cs" Line="26" Column="3" />
+      <File FileName="Assets\Scripts\BallBehaviour.cs" Line="24" Column="34" />
       <File FileName="Assets\Scripts\MainGame.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MenuScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\paddle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PaddleScript.cs" Line="17" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
