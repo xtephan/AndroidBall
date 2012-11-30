@@ -3,7 +3,9 @@ using System.Collections;
 
 public class BallBehaviour : MonoBehaviour {
 	
+	//public vars
 	public MainGame mainGameScript;
+	public GameObject particles_spark;
 	
 	// Use this for initialization
 	void Start () {
@@ -31,5 +33,10 @@ public class BallBehaviour : MonoBehaviour {
 		rigidbody.velocity *= 1.05f;
 		
 		//Debug.Log("velocity: " + rigidbody.velocity);
+	}
+	
+	// Particles spalsh on collision
+	void OnCollisionEnter(Collision collision) {
+		Instantiate(particles_spark,transform.position,transform.rotation);
 	}
 }
