@@ -12,3 +12,4 @@ My working environment:
 
 Known issues:
 * From version 3.5, Unity will not auto-distroy the particles. Since I have no fix for now, the particles created at the collision are not disposed proprietly.
+* [Fixed] The Paddle can move through the walls
