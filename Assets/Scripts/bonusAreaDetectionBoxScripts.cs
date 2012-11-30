@@ -5,6 +5,7 @@ public class bonusAreaDetectionBoxScripts : MonoBehaviour {
 	
 	//public vars
 	public MainGame mainGameScript;
+	public GameObject particles_square;
 	
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,11 @@ public class bonusAreaDetectionBoxScripts : MonoBehaviour {
 	
 	
 	public void OnTriggerEnter(Collider collision) {
-		if( collision.transform.name == "Ball" )
+		
+		if( collision.transform.name == "Ball" ) {
+			Instantiate(particles_square, transform.position, transform.rotation);
 			mainGameScript.AddBonusScore();
+		}
+	
 	}
 }
