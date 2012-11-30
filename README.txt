@@ -17,5 +17,6 @@ My working environment:
 * Visual Studio 2012 Professional
 
 Known issues:
+* Display on Android in randered with a bit of an offset :)
 * From version 3.5, Unity will not auto-distroy the particles. Since I have no fix for now, the particles created at the collision are not disposed proprietly.
 * [Fixed] The Paddle can move through the walls
