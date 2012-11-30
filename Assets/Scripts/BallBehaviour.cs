@@ -10,6 +10,12 @@ public class BallBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
+		// If ball is under the paddle
+		// Hardcoded y coordonates
+		if(transform.position.y < -6) {
+			Application.LoadLevel("menuScene");
+		}
+		
 	}
 }
