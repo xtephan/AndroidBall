@@ -1,4 +1,5 @@
 A good old fashioned Pong game made in Unity for Android devices.
+It's not about the fancy graphics, it's about the functionality.
 (Testing and learning Unity and Android SDK)
 
 
