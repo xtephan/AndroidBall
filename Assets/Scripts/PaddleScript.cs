@@ -21,8 +21,10 @@ public class PaddleScript : MonoBehaviour {
 			 myray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			 
 		     if (Physics.Raycast(myray, out myhit)) {	
-					//transform.position.x = myhit.point.x;
-				transform.position = new Vector3(myhit.point.x,transform.position.y,transform.position.z);
+					
+				if( myhit.point.x > -2.4 && myhit.point.x < 3.5 ) {
+					transform.position = new Vector3(myhit.point.x,transform.position.y,transform.position.z);
+				}
 			 }
 			
 		}
