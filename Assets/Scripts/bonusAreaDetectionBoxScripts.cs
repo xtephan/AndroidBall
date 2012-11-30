@@ -22,6 +22,7 @@ public class bonusAreaDetectionBoxScripts : MonoBehaviour {
 		
 		if( collision.transform.name == "Ball" ) {
 			Instantiate(particles_square, transform.position, transform.rotation);
+			audio.Play();
 			mainGameScript.AddBonusScore();
 		}
 	

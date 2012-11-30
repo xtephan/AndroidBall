@@ -35,8 +35,9 @@ public class BallBehaviour : MonoBehaviour {
 		//Debug.Log("velocity: " + rigidbody.velocity);
 	}
 	
-	// Particles spalsh on collision
+	// Particles splash on collision
 	void OnCollisionEnter(Collision collision) {
 		Instantiate(particles_spark,transform.position,transform.rotation);
+		audio.Play();
 	}
 }
