@@ -24,6 +24,11 @@ public class MainGame : MonoBehaviour {
 		ScoreText.text = "Score: " + score.ToString();
 	}
 	
+	// 50 points for hitting the bonus area
+	public void AddBonusScore() {
+		score += 50;
+	}
+	
 	//Manage Game Over and save high score
 	public void GameOver() {
 		
